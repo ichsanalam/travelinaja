@@ -21,14 +21,21 @@
                 {{-- End input data from database --}}
                 <div class="flex flex-row items-center justify-between item-card">
                     <div class="flex flex-row items-center gap-x-3">
-                        <img src=" " alt="" class="rounded-2xl object-cover w-[90px] h-[90px]">
+                        {{-- Category image --}}
+                        <img src=" {{ Storage::url($category->icon) }} " alt="" class="rounded-2xl object-cover w-[90px] h-[90px]">
                         <div class="flex flex-col">
-                            <h3 class="text-xl font-bold text-indigo-950">cate name</h3>
+                            {{-- Category name --}}
+                            <h3 class="text-xl font-bold text-indigo-950">
+                                {{ $category->name }}
+                            </h3>
                         </div>
                     </div> 
                     <div  class="flex-col hidden md:flex">
                         <p class="text-sm text-slate-500">Date</p>
-                        <h3 class="text-xl font-bold text-indigo-950">date</h3>
+                        {{-- Category date --}}
+                        <h3 class="text-xl font-bold text-indigo-950">
+                            {{ $category->created_at->format('M d, Y') }}
+                        </h3>
                     </div>
                     <div class="flex-row items-center hidden md:flex gap-x-3">
                         <a href=" " class="px-6 py-4 font-bold text-white bg-indigo-700 rounded-full">

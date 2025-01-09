@@ -17,8 +17,6 @@
                 {{-- Start input data from database --}}
                 @forelse ($categories as $category)
                     
-                
-                {{-- End input data from database --}}
                 <div class="flex flex-row items-center justify-between item-card">
                     <div class="flex flex-row items-center gap-x-3">
                         {{-- Category image --}}
@@ -54,6 +52,7 @@
                 <p>belom ada data kategori terbaru</p>
                     
                 @endforelse
+                {{-- End input data from database --}}
                 
 
             </div>

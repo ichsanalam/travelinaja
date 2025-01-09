@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('bank_name');
             $table->string('bank_account_name');
-            $table->string('bank_accout_number');
+            $table->string('bank_account_number');
             $table->string('logo');
             $table->softDeletes();
             $table->timestamps();

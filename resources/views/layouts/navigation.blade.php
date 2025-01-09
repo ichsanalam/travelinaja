@@ -26,7 +26,7 @@
                         <x-nav-link :href="route('admin.categories.index')" :active="request()->routeIs('admin.categories.index')">
                             {{ __('Categories') }}
                         </x-nav-link>
-                        <x-nav-link :href="route('admin.package_banks.index')" :active="request()->routeIs('admin.banks.index')">
+                        <x-nav-link :href="route('admin.package_banks.index')" :active="request()->routeIs('admin.package_banks.index')">
                             {{ __('Banks') }}
                         </x-nav-link>
                         <x-nav-link :href="route('admin.package_tours.index')" :active="request()->routeIs('admin.package_tours.index')">

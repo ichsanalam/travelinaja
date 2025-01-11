@@ -29,7 +29,7 @@ class UpdatePackageTourRequest extends FormRequest
             'price' => ['required', 'integer'],
             'days' => ['required', 'integer'],
             'about' => ['required', 'string', 'max:65535'],
-            'package_photos' => ['sometimes', 'image', 'mimes:png,jpg,jpeg'],
+            'package_photos.*' => ['sometimes', 'image', 'mimes:png,jpg,jpeg'],
         ];
     }
 }

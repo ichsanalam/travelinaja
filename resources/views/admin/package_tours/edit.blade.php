@@ -82,7 +82,7 @@
                     </div>
                         
                     @empty
-                    <p>tidak ada foto</p>
+                    <p>tidak ada foto 😊</p>
                         
                     @endforelse
 

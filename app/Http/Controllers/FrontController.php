@@ -11,4 +11,9 @@ class FrontController extends Controller
         $package_tours = PackageTour::orderByDesc('id')->take(3)->get();
         return view('front.index', compact('package_tours'));
     }
+
+    public function details(PackageTour $packageTour) {
+        $latestPhotos = $packageTour->package_photos()->orderByDesc('id')->take(3)->get();
+        return view('front.details', compact('packageTour', 'latestPhotos'));
+    }
 }

@@ -53,7 +53,7 @@
             </a>
                 
             @empty
-            <p>Belum ada paket tour pada kategory ini</p>
+            <p>maaf. belum ada paket tour pada kategory ini</p>
                 
             @endforelse
           

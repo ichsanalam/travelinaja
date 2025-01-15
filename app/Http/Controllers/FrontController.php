@@ -10,14 +10,20 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StorePackageBookingRequest;
 use App\Http\Requests\UpdatePackageBookingRequest;
+use App\Models\Category;
 use App\Models\PackageBooking;
 use Carbon\Carbon;
 
 class FrontController extends Controller
 {
     public function index() {
+        $categories = Category::orderByDesc('id')->get();
         $package_tours = PackageTour::orderByDesc('id')->take(3)->get();
-        return view('front.index', compact('package_tours'));
+        return view('front.index', compact('package_tours', 'categories'));
+    }
+
+    public function category(Category $category) {
+        return view('front.category', compact('category'));
     }
 
     public function details(PackageTour $packageTour) {

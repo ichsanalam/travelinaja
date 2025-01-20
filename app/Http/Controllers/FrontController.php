@@ -17,7 +17,7 @@ use Carbon\Carbon;
 class FrontController extends Controller
 {
     public function index() {
-        $categories = Category::orderByDesc('id')->get();
+        $categories = Category::get();
         $package_tours = PackageTour::orderByDesc('id')->take(3)->get();
         return view('front.index', compact('package_tours', 'categories'));
     }
@@ -122,5 +122,17 @@ class FrontController extends Controller
 
     public function book_finish() {
         return view('front.book_finish');
+    }
+
+    public function search_tours(Request $request) {
+        $keyword = $request->input('keyword');
+
+        $searchResult = PackageTour::query()
+            ->when($keyword, function ($query) use ($keyword) {
+                $query->where('name', 'like', "%$keyword%")
+                    ->orWhere('location', 'like', "%$keyword%");
+            })->get();
+
+        return view('front.search_tours', compact('keyword', 'searchResult'));
     }
 }

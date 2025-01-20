@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="{{ asset('output.css') }}" rel="stylesheet">
+  @vite('resources/css/app.css')
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body class="text-black font-poppins">
     <section id="content" class="max-w-[640px] w-full mx-auto bg-[#F9F2EF] min-h-screen">
-        <div class="w-full min-h-screen flex flex-col items-center justify-center py-[46px] px-4 gap-8">
+      <div class="px-4 py-7">
+        <a href="{{ route('front.index') }}">
+          <img src="{{asset('assets/icons/back.png')}}" alt="back">
+        </a>
+      </div>
+        <div class="w-full min-h-screen flex flex-col items-center justify-center pb-[46px] px-4 gap-8">
           <div class="w-[calc(100%-26px)] rounded-[20px] overflow-hidden relative">
             <img src="assets/backgrounds/Asset.png" class="object-contain w-full h-full" alt="background">
           </div>

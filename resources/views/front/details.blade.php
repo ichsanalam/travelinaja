@@ -85,7 +85,7 @@
                   <img src="{{asset('assets/photos/pfp2.png')}}" class="object-cover object-center w-full h-full" alt="photo">
                 </div>
                 <div class="flex flex-col gap-1">
-                  <p class="font-bold text-sm leading-[22px] tracking-035">James Sullivan</p>
+                  <p class="font-bold text-sm leading-[22px] tracking-035">John Doe</p>
                   <p class="text-darkGrey text-xs leading-[20px] tracking-035">1 week ago</p>
                 </div>
               </div>
@@ -97,44 +97,13 @@
                 <img src="{{asset('assets/icons/Star.svg')}}" alt="icon">
               </div>
             </div>
-            <p class="text-sm leading-[22px] tracking-035 text-darkGrey">The view was good, also I really love the weather. It’s very warm and good for healing</p>
+            <p class="text-sm leading-[22px] tracking-035 text-darkGrey">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quasi repellat aut voluptates sint reprehenderit, dolore vel, laborum expedita veritatis nulla aperiam ullam numquam dolorem! Id asperiores optio rem hic.
+            </p>
           </div>
           <hr>
-          <div class="flex gap-4">
-            <div class="flex flex-col gap-3">
-              <p class="font-semibold">2.547 <span class="font-normal text-sm leading-[22px] tracking-035 text-darkGrey">Reviews</span></p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 border-4 border-white rounded-full overflow-hidden flex shrink-0 shadow-[6px_8px_20px_0_#00000008] -ml-2 first-of-type:-ml-1">
-                  <img src="{{asset('assets/photos/pfp2.png')}}" class="object-cover object-center w-full h-full" alt="photo">
-                </div>
-                <div class="w-12 h-12 border-4 border-white rounded-full overflow-hidden flex shrink-0 shadow-[6px_8px_20px_0_#00000008] -ml-2 first-of-type:-ml-1">
-                  <img src="{{asset('assets/photos/pfp3.png')}}" class="object-cover object-center w-full h-full" alt="photo">
-                </div>
-                <div class="w-12 h-12 border-4 border-white rounded-full overflow-hidden flex shrink-0 shadow-[6px_8px_20px_0_#00000008] -ml-2 first-of-type:-ml-1">
-                  <img src="{{asset('assets/photos/pfp4.png')}}" class="object-cover object-center w-full h-full" alt="photo">
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-3">
-              <p class="font-semibold">Photo & Video</p>
-              <div class="flex gap-1">
-                <div class="relative flex w-12 h-12 overflow-hidden rounded-lg shrink-0">
-                  <img src="{{asset('assets/thumbnails/nusa-penida.jpg')}}" class="object-cover object-center w-full h-full" alt="thumbnail">
-                </div>
-                <div class="relative flex w-12 h-12 overflow-hidden rounded-lg shrink-0">
-                  <img src="{{asset('assets/thumbnails/raja.jpg')}}" class="object-cover object-center w-full h-full" alt="thumbnail">
-                </div>
-                <div class="relative flex w-12 h-12 overflow-hidden rounded-lg shrink-0">
-                  <img src="{{asset('assets/thumbnails/santorini.jpg')}}" class="object-cover object-center w-full h-full" alt="thumbnail">
-                  <div class="w-12 h-12 flex items-center justify-center bg-[#1c273080] absolute">
-                    <span class="font-semibold text-white">101+</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <a href="" class="flex items-center justify-between py-2 text-blue">
-            <span class="font-semibold text-sm leading-[22px] tracking-035">Read 2.546 more review</span>
+            <span class="font-semibold text-sm leading-[22px] tracking-035">Read 100 more review</span>
             <div>
               <img src="{{asset('assets/icons/arrow-circle-right.svg')}}" alt="icon">
             </div>
